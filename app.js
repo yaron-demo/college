@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:true}));
 
 app.all('*',(req,res)=>{
 
-return res.status(200).json({Msg:"OK"});
+return res.status(200).json({Msg:process.env.CONN_STR2});
 
 });
 
